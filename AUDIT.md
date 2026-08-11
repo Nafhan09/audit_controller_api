@@ -1,18 +1,18 @@
-# Laporan Audit Backend & Geo Location - Week #1
-**Disusun oleh:** Nafhan Zahrah Apriawan  
+# Laporan Audit Backend & Geo Location - Week 1
+**Oleh:** Nafhan Zahrah Apriawan  
 **Tanggal:** 12 Agustus 2026  
 
 ---
 
 ## 1. Audit Route & Controller (API)
-Telah dilakukan pemetaan terhadap file `routes/api.php` dan Controller terkait:
+Telah dilakukan pemetaan terhadap file `routes/api.php` dan Controller terkait
 
 ### A. TrendsController (`app/Http/Controllers/API/TrendsController.php`)
-- **Fungsi:** Mengolah data tren sebutan (mention), statistik jangkauan (reach), dan analisis sentimen publik.
-- **Endpoint Utama:**
-  - `POST /trends-graph-mention` (Melihat tren sebutan berdasarkan hari/minggu/bulan)
-  - `POST /sentiment-stats` & `POST /sentiment-category-stats` (Statistik sentimen positif/netral/negatif)
-  - `POST /sources-posts` (Daftar postingan berita & media sosial)
+- **Fungsi:** Mengolah data tren mention, reach, dan analisis sentimen publik.
+- **Method dan API endpoint**
+| Method | Endpoint | deskripsi |
+| --- | --- | --- |
+| mention_reach_graph() | post('trends-graph-mention' | Menghasilkan data grafik tren mention dan reach berdasarkan periode (day, week, month) |
 
 ### B. SourceController (`app/Http/Controllers/API/SourceController.php`)
 - **Fungsi:** Mengambil daftar platform sumber data (News, TikTok, Instagram, YouTube, Facebook, Twitter) serta kalkulasi skor pengaruh (*influence score*).
