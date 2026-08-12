@@ -36,7 +36,7 @@ Telah dilakukan pemetaan terhadap file `routes/api.php` dan Controller terkait
 
 | Method | Endpoint | Deskripsi |
 | :--- | :--- | :--- |
-| `sources()` | `POST /sources-list` | Memuat daftar platform sumber data, menghitung kalkulasi Influence Score, dan mengembalikan data berformat JSON.[cite: 1, 7, 10] |
+| `sources()` | `POST /sources-list` | Memuat daftar platform sumber data, menghitung kalkulasi Influence Score, dan mengembalikan data berformat JSON. |
 
 ---
 
