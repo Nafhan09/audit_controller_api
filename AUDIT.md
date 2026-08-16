@@ -63,7 +63,8 @@ Telah dilakukan pemetaan terhadap file `routes/api.php` dan Controller terkait
 ---
 
 ## Identifikasi Modul Geo Location
-- **Status Saat Ini:** *Not Implemented* (Belum ada).
+- **Status Saat Ini:** Frontend ada geolocation tetapi pada backend *Not Implemented* (Belum ada).
 - **Hasil Temuan:**
-  1. Pada layer Controller (`TrendsController`, `SourceController`, `ReportController`), tidak terdapat query atau pemrosesan variabel spasial (`latitude`, `longitude`, `city`, `country`).
-  2. Pada layer Database (`scraper_news` dan `scraper_socmeds`), belum tersedia kolom penyimpan data koordinat atau lokasi geografis tempat artikel/postingan dibuat.
+  1. UI/Frontend pada halaman mention telah tersedia komponen tampilan peta (Geo Location)
+  2. Pada layer Controller (`TrendsController`, `SourceController`, `ReportController`), tidak terdapat query atau pemrosesan variabel spasial (`latitude`, `longitude`, `city`, `country`).
+  3. Pada layer Database (`scraper_news` dan `scraper_socmeds`), belum tersedia kolom penyimpan data koordinat atau lokasi geografis tempat artikel/postingan dibuat.
